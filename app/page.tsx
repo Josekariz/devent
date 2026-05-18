@@ -1,9 +1,5 @@
-
-
 const page = () => {
-  return (
-    <div>Welcome to Next.js 16.</div>
-  )
-}
+  return <h1 className="text-red-800">Hi there!</h1>;
+};
 
-export default page
+export default page;
