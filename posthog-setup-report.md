@@ -20,12 +20,12 @@ The wizard has completed a deep integration of PostHog into the Devent project. 
 
 We've built some insights and a dashboard for you to keep an eye on user behavior, based on the events we just instrumented:
 
-- [Analytics basics dashboard](/dashboard/1609065)
-- [Explore Events button clicks](/insights/IkvdMkBM) — daily trend of how often users click the Explore button
-- [Event card clicks over time](/insights/Jn8KZS3J) — daily trend of event card interactions
-- [Most clicked events by title](/insights/6swmxiuc) — breakdown of which events attract the most clicks
-- [Unique users engaging with events](/insights/gTzmp57j) — daily active users for both tracked interactions
-- [Explore to event click conversion funnel](/insights/67g2WLHq) — funnel from Explore Events → Event Card click
+- Create an analytics dashboard in your own PostHog project for the events above.
+- Add a daily trend insight for `explore_events_clicked`.
+- Add a daily trend insight for `event_card_clicked`.
+- Add a breakdown insight for `event_card_clicked` grouped by `event_title`.
+- Add a unique users insight for event engagement.
+- Add a funnel from `explore_events_clicked` to `event_card_clicked`.
 
 ### Agent skill
 

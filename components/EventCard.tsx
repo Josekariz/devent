@@ -21,12 +21,14 @@ const EventCard = ({
   time,
 }: EventCardProps) => {
   const handleClick = () => {
-    posthog.capture("event_card_clicked", {
-      event_title: title,
-      event_slug: slug,
-      event_location: location,
-      event_date: date,
-    });
+    if (typeof posthog?.capture === "function") {
+      posthog.capture("event_card_clicked", {
+        event_title: title,
+        event_slug: slug,
+        event_location: location,
+        event_date: date,
+      });
+    }
   };
 
   return (

@@ -92,6 +92,7 @@ posthog.init(process.env.NEXT_PUBLIC_POSTHOG_PROJECT_TOKEN!, {
   debug: process.env.NODE_ENV === "development",
 });
 ```
+`defaults: '2026-01-30'` points to a dated PostHog-JS defaults snapshot, while explicit init options like `api_host`, `capture_exceptions`, and `debug` override snapshot values.
 
 ### User identification (AuthContext.tsx)
 

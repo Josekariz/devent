@@ -10,8 +10,9 @@ const ExploreBtn = () => {
       id="explore-btn"
       className="mt-7 mx-auto"
       onClick={() => {
-        console.log("CLICK");
-        posthog.capture("explore_events_clicked");
+        if (typeof posthog?.capture === "function") {
+          posthog.capture("explore_events_clicked");
+        }
       }}
     >
       <a href="#events">
